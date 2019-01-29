@@ -36,3 +36,16 @@ function findLongestWord(array) {
 }
 
 console.log(findLongestWord(words));
+
+//calculating a sum
+var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+
+function sumArray(array) {
+  var result = 0;
+  for (var i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  return result;
+}
+
+console.log(sumArray(numbers));
