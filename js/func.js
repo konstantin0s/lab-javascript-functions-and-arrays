@@ -22,6 +22,17 @@ var words = [
 ];
 
 //Finding the longest word
-function findLongestWord() {
+function findLongestWord(array) {
+  var  norm = 0;
+   var longest;
 
+   for (var i = 0; i < array.length; i++) {
+    if (array[i].length > norm) {
+      norm = array[i].length;
+      longest = array[i];
+      }
+   }
+   return longest;
 }
+
+console.log(findLongestWord(words));
