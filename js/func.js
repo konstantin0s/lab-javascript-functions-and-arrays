@@ -49,3 +49,55 @@ function sumArray(array) {
 }
 
 console.log(sumArray(numbers));
+
+//calculate the average
+var numbers1 = [2, 6, 9, 10, 7, 4, 1, 9];
+function averageNumbers(array) {
+  var result = 0;
+  for (var i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  return result / 2;
+}
+
+console.log(averageNumbers(numbers1));
+
+//Array of strings
+var words1 = [
+  'seat',
+  'correspond',
+  'linen',
+  'motif',
+  'hole',
+  'smell',
+  'smart',
+  'chaos',
+  'fuel',
+  'palace'
+];
+
+function averageWordLength(array) {
+  var  norm = 0;
+  for (var i = 0; i < array.length; i++) {
+   if (array[i].length) {
+     norm += array[i].length;
+     }
+  }
+  return norm / 2;
+}
+
+console.log(averageWordLength(words1));
+
+//Unique Arrays
+function uniquifyArray(array) {
+  var  norm = "";
+  var duplicate;
+
+  for (var i = 0; i < array.length; i++) {
+   if (array[i].length > norm) {
+     norm = array[i].length;
+     longest = array[i];
+     }
+  }
+  return norm;
+}
