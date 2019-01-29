@@ -164,3 +164,23 @@ function howManyTimes(array, what) {
 
 var howMany = howManyTimes(words4, "matter");
 console.log(howMany);
+
+//Bonus Quest
+
+
+function greatestProduct(array) {
+
+  var table = new Array(20);
+   for (var i = 0; i < table.length; i++) {
+  table[i] =  new Array(20);
+}
+
+  var sum = 0;
+
+  for(var row = 0; row < table.length -3; row++) {
+    for(col = 0; col < table[row].length - 3; col++) {
+        table[row][col] = row + col;
+    }
+} 
+
+}
