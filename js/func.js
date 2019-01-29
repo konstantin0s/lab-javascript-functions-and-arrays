@@ -110,3 +110,57 @@ function uniquifyArray(array) {
 }
 
 console.log(uniquifyArray(words2));
+
+//Finding Elements
+var words3 = [
+  'machine',
+  'subset',
+  'trouble',
+  'starting',
+  'matter',
+  'eating',
+  'truth',
+  'disobedience'
+];
+
+function doesWordExist(arr, array){
+  var found = false;
+
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i] === array) {
+      found = true;
+      break;
+    }
+  }
+    return found;
+}
+
+var doesExist = doesWordExist(words3, "eating");
+console.log(doesExist);
+
+//How many times?
+var words4 = [
+  "machine",
+  "matter",
+  "subset",
+  "trouble",
+  "starting",
+  "matter",
+  "eating",
+  "matter",
+  "truth",
+  "disobedience",
+  "matter"];
+
+function howManyTimes(array, what) {
+  var count = 0;
+  for (var i = 0; i < array.length; i++) {
+      if (array[i] === what) {
+          count++;
+      }
+  }
+  return count;
+}
+
+var howMany = howManyTimes(words4, "matter");
+console.log(howMany);
