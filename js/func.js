@@ -89,15 +89,24 @@ function averageWordLength(array) {
 console.log(averageWordLength(words1));
 
 //Unique Arrays
-function uniquifyArray(array) {
-  var  norm = "";
-  var duplicate;
+var words2 = [
+  'crab',
+  'poison',
+  'contagious',
+  'simple',
+  'bring',
+  'sharp',
+  'playground',
+  'poison',
+  'communion',
+  'simple',
+  'bring'
+];
 
-  for (var i = 0; i < array.length; i++) {
-   if (array[i].length > norm) {
-     norm = array[i].length;
-     longest = array[i];
-     }
-  }
-  return norm;
+function uniquifyArray(array) {
+  // var unique = "";
+  return array.filter((value, i, self) => 
+  self.indexOf(value) == i);
 }
+
+console.log(uniquifyArray(words2));
