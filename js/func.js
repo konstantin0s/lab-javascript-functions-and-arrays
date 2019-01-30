@@ -79,11 +79,9 @@ var words1 = [
 function averageWordLength(array) {
   var  norm = 0;
   for (var i = 0; i < array.length; i++) {
-   if (array[i].length) {
      norm += array[i].length;
-     }
   }
-  return norm / 2;
+  return norm / array.length;
 }
 
 console.log(averageWordLength(words1));
